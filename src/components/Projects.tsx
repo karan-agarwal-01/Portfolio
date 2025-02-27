@@ -33,9 +33,9 @@ const Projects = () => {
     ]
 
     return (
-        <div id="portfolio" className="mx-20 h-[140vh] w-[90vw]">
+        <div id="portfolio" className="mx-20 h-[125vh] w-[90vw]">
             <div className="text-5xl font-medium text-gradient2 ml-32">PORTFOLIO</div>
-            <div className="border-0 border-l border-gray-600 w-[65%] ml-52 mt-2 text-lg  px-10 py-7 text-shadow">
+            <div className="border-0 border-l border-gray-600 w-[65%] ml-52 mt-2 text-lg  px-10 py-4 text-shadow">
                 {
                     projects.map((project) => (
                         <div key={project.id} className="flex items-center gap-20 my-1 w-[60vw] p-5">
@@ -48,7 +48,7 @@ const Projects = () => {
                                 </a>
                             </div>
                             <div className="w-[50%]">
-                                <img className="w-[30rem] rounded-xl" src={project.project_img} />
+                                <img className="w-[30rem] rounded-xl hover:scale-105 transition" src={project.project_img} />
                             </div>
                         </div>
                     ))

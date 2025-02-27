@@ -6,9 +6,9 @@ import { TiHtml5 } from "react-icons/ti";
 
 const Skills = () => {
     return (
-        <div id='skills' className="mx-20 h-[100vh]">
+        <div id='skills' className="mx-20 h-[90vh]">
             <div className="text-5xl font-medium text-gradient2 ml-32">MY SKILLS</div>
-            <div className="border-0 border-l border-gray-600 w-[65%] ml-52 mt-2 text-lg  px-10 py-7 text-shadow">
+            <div className="border-0 border-l border-gray-600 w-[65%] ml-52 mt-2 text-lg px-10 py-7 text-shadow">
                 <div className="grid grid-cols-3">
                     <div className="glass w-[85%] h-[11rem] my-2 flex flex-col justify-center items-center gap-1 border-[2px] text-[#58c4dc] transition hover:scale-105">
                         <DiReact className="text-[5rem]" />

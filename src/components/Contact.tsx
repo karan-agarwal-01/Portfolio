@@ -43,10 +43,10 @@ const Contact = () => {
     }
 
     return (
-        <div id='contact' className="mt-24 mx-20 h-[100vh]">
+        <div id='contact' className="mx-20 h-[100vh] mt-32">
             <div className="text-5xl font-medium text-gradient2 ml-32">CONTACT ME</div>
             <div className="border-0 border-l border-gray-600 w-[65%] ml-52 mt-2 text-lg  px-10 py-7 text-shadow">
-                <div className="flex gap-16 w-[125%]">
+                <div className="flex gap-16 w-[120%]">
                     <div className="flex flex-col gap-5 w-[60%]">
                         <div className="text-gradient4 text-2xl">
                             DO YOU HAVE A PROJECT TO DISCUSS ?
