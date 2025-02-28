@@ -2,6 +2,7 @@ import { BiLink } from "react-icons/bi";
 import img1 from './../assets/images/tenallengine.png'
 import img2 from './../assets/images/tenhealthengine.png'
 import img3 from './../assets/images/tenfashion.png'
+import { Link } from "react-router";
 
 const Projects = () => {
 
@@ -33,22 +34,24 @@ const Projects = () => {
     ]
 
     return (
-        <div id="portfolio" className="mx-20 h-[125vh] w-[90vw]">
-            <div className="text-5xl font-medium text-gradient2 ml-32">PORTFOLIO</div>
-            <div className="border-0 border-l border-gray-600 w-[65%] ml-52 mt-2 text-lg  px-10 py-4 text-shadow">
+        <div id="portfolio" className="lg:h-[132vh] md:h-[71vh] h-[120vh] w-[90vw] lg:mx-20 md:mx-16 mx-8">
+            <div className="lg:text-5xl md:text-[2.5rem] text-4xl font-medium text-gradient2 lg:ml-32 md:ml-2 ml-0 lg:w-[27%] md:w-[32%] w-[56%]">PORTFOLIO</div>
+            <div className="border-0 border-l border-gray-600 lg:w-[65%] md:w-[100%] w-[95%] lg:ml-52 md:ml-16 ml-4 mt-2 mb-8 font-aldrich lg:text-lg md:text-lg text-sm font-semibold text-violet-300 lg:px-10 md:px-6 px-3 lg:py-7 md:py-4 py-4 text-shadow">
                 {
                     projects.map((project) => (
-                        <div key={project.id} className="flex items-center gap-20 my-1 w-[60vw] p-5">
-                            <div className="w-[50%] flex flex-col gap-1">
-                                <div className="text-3xl tracking-wider font-semibold text-gradient3">{project.project_name}</div>
-                                <div className="ml-1 text-[.9rem] font-aldrich text-violet-200">{project.project_details}</div>
-                                <a href={project.project_link} className="flex font-medium items-center gap-1 text-violet-400 hover:text-violet-500 cursor-pointer text-[1rem]">
+                        <div key={project.id} className="lg:flex md:flex items-center lg:gap-20 md:gap-10 gap-5 my-1 lg:w-[60vw] md:w-[75vw] w-[80vw] lg:p-5 md:p-3.5 p-2">
+                            <div className="lg:w-[50%] md:w-[50%] w-[100%] flex flex-col gap-1">
+                                <div className="lg:text-3xl md:text-2xl text-xl lg:text-left md:text-left text-center tracking-wider font-semibold text-gradient3">{project.project_name}</div>
+                                <div className="lg:ml-1 md:ml-1 ml-0 lg:text-[.9rem] md:text-[.8rem] text-[.8rem] font-aldrich text-violet-200">{project.project_details}</div>
+                                <a href={project.project_link} className="lg:flex md:flex hidden font-medium items-center gap-1 text-violet-400 hover:text-violet-500 cursor-pointer lg:text-[1rem] md:text-[1rem] text-[.9rem]">
                                     <BiLink />
                                     <p>Link of the project</p>
                                 </a>
                             </div>
-                            <div className="w-[50%]">
-                                <img className="w-[30rem] rounded-xl hover:scale-105 transition" src={project.project_img} />
+                            <div className="lg:w-[50%] md:w-[50%] w-[100%] lg:mx-0 md:mx-0 mx-[10%] mt-3">
+                                <Link to={project.project_link}>
+                                    <img className="lg:w-[30rem] md:w-[25rem] w-[15rem] rounded-xl hover:scale-105 transition" src={project.project_img} />
+                                </Link>
                             </div>
                         </div>
                     ))

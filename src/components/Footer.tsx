@@ -5,7 +5,7 @@ const Footer = () => {
             <hr className="text-gray-500" />
         </div>
         <div className="flex">
-            <div className="text-[1rem] mb-5 mx-auto  font-aldrich text-violet-200">© 2025 - All rights reserved, web design and development - Karan Agarwal</div>
+            <div className="lg:text-[1rem] md:text-[.7rem] text-[.5rem] mb-5 mx-auto font-aldrich text-violet-200">© 2025 - All rights reserved, web design and development - Karan Agarwal</div>
         </div>
         </>
     );

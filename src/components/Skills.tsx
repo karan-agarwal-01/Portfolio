@@ -6,32 +6,32 @@ import { TiHtml5 } from "react-icons/ti";
 
 const Skills = () => {
     return (
-        <div id='skills' className="mx-20 h-[90vh]">
-            <div className="text-5xl font-medium text-gradient2 ml-32">MY SKILLS</div>
-            <div className="border-0 border-l border-gray-600 w-[65%] ml-52 mt-2 text-lg px-10 py-7 text-shadow">
-                <div className="grid grid-cols-3">
-                    <div className="glass w-[85%] h-[11rem] my-2 flex flex-col justify-center items-center gap-1 border-[2px] text-[#58c4dc] transition hover:scale-105">
-                        <DiReact className="text-[5rem]" />
+        <div id='skills' className="lg:h-[90vh] md:h-[50vh] lg:mx-20 md:mx-16 mx-8">
+            <div className="lg:text-5xl md:text-[2.5rem] text-4xl font-medium text-gradient2 lg:ml-32 md:ml-2 ml-0 lg:w-[27%] md:w-[32%] w-[56%]">MY SKILLS</div>
+            <div className="border-0 border-l border-gray-600 lg:w-[65%] md:w-[90%] w-[95%] lg:ml-52 md:ml-16 ml-4 mt-2 mb-8 font-aldrich lg:text-lg md:text-lg text-sm font-semibold text-violet-300 lg:px-10 md:px-6 px-3 lg:py-7 md:py-4 py-4 text-shadow">
+                <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2">
+                    <div className="glass lg:w-[85%] md:w-[92%] w-[96%] lg:h-[11rem] md:h-[10rem] h-[9rem] lg:my-2 md:my-2 my-1 flex flex-col justify-center items-center gap-1 border-[1px] text-[#58c4dc] transition hover:scale-105">
+                        <DiReact className="lg:text-[5rem] md:text-[3.5rem] text-[3rem]" />
                         <p className="font-aldrich">React.js</p>
                     </div>
-                    <div className="glass w-[85%] h-[11rem] my-2 flex flex-col justify-center items-center gap-1 border-[1px] text-[#fcdc00] transition hover:scale-105">
-                        <RiJavascriptFill className="text-[5rem]" />
+                    <div className="glass lg:w-[85%] md:w-[92%] w-[96%] lg:h-[11rem] md:h-[10rem] h-[9rem] lg:my-2 md:my-2 my-1 flex flex-col justify-center items-center gap-1 border-[1px] text-[#fcdc00] transition hover:scale-105">
+                        <RiJavascriptFill className="lg:text-[5rem] md:text-[3.5rem] text-[3rem]" />
                         <p className="font-aldrich">JavaScript</p>
                     </div>
-                    <div className="glass w-[85%] h-[11rem] my-2 flex flex-col justify-center items-center gap-1 border-[1px] text-[#FFA611] transition hover:scale-105">
-                        <RiFirebaseLine className="text-[5rem]" />
+                    <div className="glass lg:w-[85%] md:w-[92%] w-[96%] lg:h-[11rem] md:h-[10rem] h-[9rem] lg:my-2 md:my-2 my-1 flex flex-col justify-center items-center gap-1 border-[1px] text-[#FFA611] transition hover:scale-105">
+                        <RiFirebaseLine className="lg:text-[5rem] md:text-[3.5rem] text-[3rem]" />
                         <p className="font-aldrich">Firebase</p>
                     </div>
-                    <div className="glass w-[85%] h-[11rem] my-2 flex flex-col justify-center items-center gap-1 border-[1px] text-[#FF6739] transition hover:scale-105">
-                        <TiHtml5 className="text-[5rem]" />
+                    <div className="glass lg:w-[85%] md:w-[92%] w-[96%] lg:h-[11rem] md:h-[10rem] h-[9rem] lg:my-2 md:my-2 my-1 flex flex-col justify-center items-center gap-1 border-[1px] text-[#FF6739] transition hover:scale-105">
+                        <TiHtml5 className="lg:text-[5rem] md:text-[3.5rem] text-[3rem]" />
                         <p className="font-aldrich">HTML</p>
                     </div>
-                    <div className="glass w-[85%] h-[11rem] my-2 flex flex-col justify-center items-center gap-1 border-[2px] text-sky-400 transition hover:scale-105">
-                        <SiTailwindcss className="text-[5rem]" />
+                    <div className="glass lg:w-[85%] md:w-[92%] w-[96%] lg:h-[11rem] md:h-[10rem] h-[9rem] lg:my-2 md:my-2 my-1 flex flex-col justify-center items-center gap-1 border-[1px] text-sky-400 transition hover:scale-105">
+                        <SiTailwindcss className="lg:text-[5rem] md:text-[3.5rem] text-[3rem]" />
                         <p className="font-aldrich">Tailwind CSS</p>
                     </div>
-                    <div className="glass w-[85%] h-[11rem] my-2 flex flex-col justify-center items-center gap-1 border-[1px] text-[#ef391a] transition hover:scale-105">
-                        <FaGitAlt className="text-[5rem]" />
+                    <div className="glass lg:w-[85%] md:w-[92%] w-[96%] lg:h-[11rem] md:h-[10rem] h-[9rem] lg:my-2 md:my-2 my-1 flex flex-col justify-center items-center gap-1 border-[1px] text-[#ef391a] transition hover:scale-105">
+                        <FaGitAlt className="lg:text-[5rem] md:text-[3.5rem] text-[3rem]" />
                         <p className="font-aldrich">Git</p>
                     </div>
                 </div>
