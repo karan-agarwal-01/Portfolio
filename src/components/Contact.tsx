@@ -80,15 +80,16 @@ const Contact = () => {
                             <input type="hidden" id="access_key" {...register("access_key")} value={import.meta.env.VITE_ACCESS_KEY} />
                             <div className="flex flex-col gap-2 mb-3">
                                 <label className="lg:text-lg md:text-md text-sm text-white font-aldrich">Name</label>
-                                <input type="text" id='name' {...register("name")} className="border rounded-2xl border-gray-500 py-2  w-full lg:w-[22rem] md:w-[14rem] focus:outline-0 px-4 text-[1rem] text-gray-300" />
+                                <input type="text" id='name' {...register("name")} className="border rounded-2xl border-gray-500 py-2  w-full lg:w-[22rem] md:w-[14rem] focus:outline-0 px-4 text-[1rem] text-gray-300" required />
                             </div>
                             <div className="flex flex-col gap-2 mb-3">
                                 <label className="lg:text-lg md:text-md text-sm text-white font-aldrich">Email</label>
-                                <input type="email" id='email' {...register("email")} className="border rounded-2xl border-gray-500 py-2 w-full lg:w-[22rem] md:w-[14rem] focus:outline-0 px-4 text-[1rem] text-gray-300" />
+                                <input type="email" id='email' {...register("email")} className="border rounded-2xl border-gray-500 py-2 w-full lg:w-[22rem] md:w-[14rem] focus:outline-0 px-4 text-[1rem] text-gray-300" required />
                             </div>
                             <div className="flex flex-col gap-2 mb-3">
                                 <label className="lg:text-lg md:text-md text-sm text-white font-aldrich">Message</label>
-                                <textarea rows={4} id='message' {...register("message")} className="border rounded-2xl border-gray-500 py-2 w-full lg:w-[22rem] md:w-[14rem] focus:outline-0 px-4 text-[1rem] text-gray-300"></textarea>
+                                <textarea rows={4} id='message' {...register("message")} className="border rounded-2xl border-gray-500 py-2 w-full lg:w-[22rem] md:w-[14rem] focus:outline-0 px-4 text-[1rem] text-gray-300" required>
+                                </textarea>
                             </div>
                             <button type="submit" className="text-sm font-medium border rounded-xl py-2.5 px-5 text-violet-400 cursor-pointer hover:text-violet-200 mt-2 ml-1">Submit</button>
                         </form>
