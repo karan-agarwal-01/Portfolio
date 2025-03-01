@@ -4,6 +4,9 @@
 body {
     background: linear-gradient(90deg,#1d2d44, #231942);
     height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .text-gradient {
