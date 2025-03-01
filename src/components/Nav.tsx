@@ -16,9 +16,9 @@ const Nav = () => {
     console.log(isSideBarOpen)
 
     return (
-        <>
-        <nav className="fixed z-10 flex justify-between items-center border rounded-full lg:w-[80%] md:w-[90%] w-[96%] lg:my-4 md:my-4 my-3 lg:mx-[10%] md:mx-[5.5%] mx-[2%] lg:py-3 md:py-3 py-2.5 lg:px-12 md:px-8 px-4 text-white border-gray-600 glass2">
-            <RxHamburgerMenu onClick={toggleSidebar} className="lg:hidden md:hidden text-xl" />
+        <div className='sticky top-0 z-10 flex justify-center'>
+        <nav className="flex justify-between items-center border rounded-full lg:w-[80vw] md:w-[90vw] w-[95vw] max-w-[100vw] lg:my-4 md:my-4 my-3 lg:py-3 md:py-3 py-2.5 lg:px-12 md:px-8 px-4 text-white border-gray-600 glass2">
+            <RxHamburgerMenu onClick={toggleSidebar} className="block lg:hidden md:hidden text-xl" />
             <div>
             <ScrollLink to='home' smooth={true} duration={500} className="lg:text-lg md:text-lg text-lg font-semibold font-aldrich">KARAN AGARWAL</ScrollLink>
             </div>
@@ -35,7 +35,7 @@ const Nav = () => {
             </div>
             </RouterLink>
         </nav>
-        <div onClick={toggleSidebar} className={`fixed top-0 right-0 h-full w-[100%] z-20 bg-black text-white opacity-85 shadow-lg p-5 transform transition-transform duration-300 ${
+        <div onClick={toggleSidebar} className={`fixed top-0 right-0 h-full w-full z-20 bg-black text-white opacity-85 shadow-lg p-5 transform transition-transform duration-300 ${
                     isSideBarOpen ? "translate-x-0" : "translate-x-full"
         }`}>
             <RxCross2 className='text-[2rem] mb-4 float-right' onClick={toggleSidebar} />
@@ -46,7 +46,7 @@ const Nav = () => {
                 <ScrollLink to='contact' smooth={true} duration={500} onClick={toggleSidebar} className="text-3xl font-light hover:text-violet-400 cursor-pointer">CONTACT</ScrollLink>
             </div>
         </div>
-        </>
+        </div>
     );
 }
 

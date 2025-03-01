@@ -43,9 +43,9 @@ const Contact = () => {
     }
 
     return (
-        <div id='contact' className="lg:h-[100vh] md:h-[58vh] h-[122vh] mt-32 lg:mx-20 md:mx-16 mx-8" data-aos="fade-up">
+        <div id='contact' className="h-auto lg:mx-20 md:mx-16 mx-8" data-aos="fade-up">
             <div className="lg:text-5xl md:text-[2.5rem] text-4xl font-medium text-gradient2 lg:ml-32 md:ml-2 ml-0 lg:w-[27%] md:w-[39%] w-[68%]">CONTACT ME</div>
-            <div className="border-0 border-l border-gray-600 lg:w-[65%] md:w-[85%] w-[95%] lg:ml-52 md:ml-16 ml-4 mt-2 mb-8 font-aldrich lg:text-lg md:text-lg text-sm font-semibold text-violet-300 lg:px-10 md:px-6 px-3 lg:py-7 md:py-4 py-4 text-shadow">
+            <div className="border-0 border-l border-gray-600 lg:w-[65%] md:w-[85%] w-[95%] lg:ml-52 md:ml-16 ml-4 mt-2 mb-8 font-aldrich lg:text-lg md:text-lg text-sm font-semibold text-violet-300 lg:px-10 md:px-6 px-3 lg:py-7 md:py-4 py-4">
                 <div className="lg:flex md:flex lg:gap-16 md:gap-10 gap-5 lg:w-[120%] md:w-[100%] w-[100%]">
                     <div className="flex flex-col gap-5 lg:w-[60%] md:w-[65%] w-[100%]" data-aos="fade-right">
                         <div className="text-gradient4 lg:text-2xl md:text-xl text-lg">
@@ -74,21 +74,21 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="lg:w-[60%] md:w-[35%] w-[100%]" data-aos="fade-left">
-                        <h1 className="text-white lg:text-2xl md:text-xl text-lg lg:mt-0 md:mt-0 mt-10 text-center">CONTACT FORM</h1>
+                    <div className="lg:w-[40%] md:w-[35%] w-full" data-aos="fade-left">
+                        <h1 className="text-white lg:text-2xl md:text-xl text-lg lg:mt-0 md:mt-0 mt-10 lg:text-left md:text-left text-center">CONTACT FORM</h1>
                         <form className="my-6" onSubmit={handleSubmit(onSubmitHandler)}>
                             <input type="hidden" id="access_key" {...register("access_key")} value={import.meta.env.VITE_ACCESS_KEY} />
                             <div className="flex flex-col gap-2 mb-3">
                                 <label className="lg:text-lg md:text-md text-sm text-white font-aldrich">Name</label>
-                                <input type="text" id='name' {...register("name")} className="border rounded-2xl border-gray-500 py-2 lg:w-[22rem] md:w-[16rem] focus:outline-0 px-4 text-[1rem] text-gray-300" />
+                                <input type="text" id='name' {...register("name")} className="border rounded-2xl border-gray-500 py-2  w-full lg:w-[22rem] md:w-[14rem] focus:outline-0 px-4 text-[1rem] text-gray-300" />
                             </div>
                             <div className="flex flex-col gap-2 mb-3">
                                 <label className="lg:text-lg md:text-md text-sm text-white font-aldrich">Email</label>
-                                <input type="email" id='email' {...register("email")} className="border rounded-2xl border-gray-500 py-2 lg:w-[22rem] md:w-[16rem] focus:outline-0 px-4 text-[1rem] text-gray-300" />
+                                <input type="email" id='email' {...register("email")} className="border rounded-2xl border-gray-500 py-2 w-full lg:w-[22rem] md:w-[14rem] focus:outline-0 px-4 text-[1rem] text-gray-300" />
                             </div>
                             <div className="flex flex-col gap-2 mb-3">
                                 <label className="lg:text-lg md:text-md text-sm text-white font-aldrich">Message</label>
-                                <textarea rows={4} id='message' {...register("message")} className="border rounded-2xl border-gray-500 py-2 lg:w-[22rem] md:w-[16rem] focus:outline-0 px-4 text-[1rem] text-gray-300"></textarea>
+                                <textarea rows={4} id='message' {...register("message")} className="border rounded-2xl border-gray-500 py-2 w-full lg:w-[22rem] md:w-[14rem] focus:outline-0 px-4 text-[1rem] text-gray-300"></textarea>
                             </div>
                             <button type="submit" className="text-sm font-medium border rounded-xl py-2.5 px-5 text-violet-400 cursor-pointer hover:text-violet-200 mt-2 ml-1">Submit</button>
                         </form>
