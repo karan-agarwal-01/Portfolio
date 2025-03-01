@@ -1,8 +1,8 @@
-import { FaArrowRight } from "react-icons/fa";
 import { Link as ScrollLink  } from 'react-scroll';
 import { Link as RouterLink } from 'react-router';
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
+import { GoDownload } from "react-icons/go";
 
 
 const Nav = () => {
@@ -31,7 +31,7 @@ const Nav = () => {
             <RouterLink to ='/resume'>
             <div className="font-light border rounded-full px-3.5 py-2 text-violet-400 cursor-pointer hover:text-violet-200 flex items-center gap-1">
                 <p className="text-sm font-medium">RESUME</p> 
-                <FaArrowRight />
+                <GoDownload />
             </div>
             </RouterLink>
         </nav>
