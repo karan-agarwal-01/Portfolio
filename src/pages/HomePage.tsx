@@ -5,8 +5,16 @@ import Home from "../components/Home";
 import Nav from "../components/Nav";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 const HomePage = () => {
+
+    useEffect(() => {
+        AOS.init({ duration: 1000 }); // Set animation duration
+    }, []);
+ 
     return (
         <>
         <Nav />

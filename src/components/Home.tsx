@@ -1,11 +1,12 @@
 import { Link } from 'react-scroll';
 import mypic from '../assets/images/mypic.jpg'
 
+
 const Home = () => {
 
     return (
         <>
-        <div className="lg:mx-20 md:mx-16 mx-8 lg:pt-20 md:pt-16 pt-8" id='home'>
+        <div className="lg:mx-20 md:mx-16 mx-8 lg:pt-20 md:pt-16 pt-8 " id='home' data-aos="fade-up">
             <div className="lg:w-[100%] md:w-[90%] lg:flex md:flex items-center lg:my-0 md:my-3 my-27">
                 <div className="lg:w-[50%] md:w-[60%] w-[100%] lg:h-[25rem] md:h-[20rem] h-[10rem]">
                     <div className="lg:mx-20 md:mx-5 mx-[20%] lg:my-12 md:my-14">
