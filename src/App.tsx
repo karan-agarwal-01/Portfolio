@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css'
 import Resume from './components/Resume';
 import HomePage from './pages/HomePage'
-import {BrowserRouter, Route, Routes, HashRouter} from 'react-router';
+import {BrowserRouter, Route, Routes} from 'react-router';
 
 function App() {
 
