@@ -7,17 +7,19 @@ const Resume = () => {
     const fileurl: string = "https://drive.google.com/uc?export=download&id=19ul37aKTc85OIhCvOQEsgbCz6vS8BkEA";
 
     return (
-        <div className="lg:top-0 md:top-0 lg:px-4 md:px-2 px-1 lg:mx-[4%] lg:my-[1%] md:mx-[3%] md:my-[3%] mx-[2%] my-[2%] h-[180vh]" data-aos="fade-up">
-            <div className='lg:text-4xl md:text-3xl text-2xl font-semibold font-[cambria] text-violet-400 text-center my-5 font-aldrich'>Checkout my Resume</div>
-            <div className="lg:h-[59rem] md:h-[52rem] h-[54rem] lg:w-[40rem] md:w-[38rem] w-[23rem] bg-white mx-auto border-2 border-violet-800 font-[cambria]">
+        <div className="lg:top-0 md:top-0 lg:px-4 md:px-2 px-1 lg:mx-[4%] lg:my-[1%] md:mx-[3%] md:my-[3%] mx-[2%] my-[2%] h-[180vh]">
+            <div className="flex justify-center">
+                <div className='lg:text-5xl md:text-[2.5rem] text-4xl font-medium text-gradient2 my-2'>Checkout my Resume</div>
+            </div>
+            <div className="lg:h-[59rem] md:h-[52rem] h-[54rem] lg:w-[40rem] md:w-[38rem] w-[23rem] bg-white mx-auto border border-violet-800 font-[cambria]">
                 <div className="flex items-center justify-between">
                     <Link to='/'>
-                        <div className="text-xl ml-5">
+                        <div className="lg:text-xl md:text-lg text-md ml-5">
                             <BiArrowBack />
                         </div>
                     </Link>
                     <div className="text-center font-medium lg:text-[1.6rem] md:text-[1.4rem] text-[1.2rem] mt-2">Karan Agarwal</div>
-                    <a href={fileurl} className="text-lg text-violet-600 border-2 rounded-full p-1 mr-5 hover:bg-violet-600 hover:text-white hover:border-black">
+                    <a href={fileurl} className="lg:text-lg md:text-md text-sm text-violet-600 border-2 rounded-full p-1 mr-5 hover:bg-violet-600 hover:text-white hover:border-black">
                         <GoDownload />
                     </a>
                 </div>

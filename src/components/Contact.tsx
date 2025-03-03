@@ -43,11 +43,12 @@ const Contact = () => {
     }
 
     return (
-        <div id='contact' className="h-auto lg:mx-20 md:mx-16 mx-8" data-aos="fade-up">
+        <div id='contact' className="h-auto lg:mx-20 md:mx-16 mx-8">
+            <div data-aos="fade-up">
             <div className="lg:text-5xl md:text-[2.5rem] text-4xl font-medium text-gradient2 lg:ml-32 md:ml-2 ml-0 lg:w-[27%] md:w-[39%] w-[68%]">CONTACT ME</div>
-            <div className="border-0 border-l border-gray-600 lg:w-[65%] md:w-[85%] w-[95%] lg:ml-52 md:ml-16 ml-4 mt-2 mb-8 font-aldrich lg:text-lg md:text-lg text-sm font-semibold text-violet-300 lg:px-10 md:px-6 px-3 lg:py-7 md:py-4 py-4">
+            <div className="border-0 border-l border-gray-600 lg:w-[65%] md:w-[85%] w-[95%] lg:ml-52 md:ml-16 ml-4 mt-2 mb-8 font-aldrich lg:text-lg md:text-lg text-sm font-semibold text-violet-300 lg:px-10 md:px-6 px-3 lg:py-7 md:py-4 py-4" data-aos="fade-right">
                 <div className="lg:flex md:flex lg:gap-16 md:gap-10 gap-5 lg:w-[120%] md:w-[100%] w-[100%]">
-                    <div className="flex flex-col gap-5 lg:w-[60%] md:w-[65%] w-[100%]" data-aos="fade-right">
+                    <div className="flex flex-col gap-5 lg:w-[60%] md:w-[65%] w-[100%]">
                         <div className="text-gradient4 lg:text-2xl md:text-xl text-lg">
                             DO YOU HAVE A PROJECT TO DISCUSS ?
                         </div>
@@ -74,7 +75,7 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="lg:w-[40%] md:w-[35%] w-full" data-aos="fade-left">
+                    <div className="lg:w-[40%] md:w-[35%] w-full">
                         <h1 className="text-white lg:text-2xl md:text-xl text-lg lg:mt-0 md:mt-0 mt-10 lg:text-left md:text-left text-center">CONTACT FORM</h1>
                         <form className="my-6" onSubmit={handleSubmit(onSubmitHandler)}>
                             <input type="hidden" id="access_key" {...register("access_key")} value={import.meta.env.VITE_ACCESS_KEY} />
@@ -95,6 +96,7 @@ const Contact = () => {
                         </form>
                     </div>
                 </div>
+            </div>
             </div>
           <ToastContainer />
         </div>

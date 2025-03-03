@@ -6,8 +6,8 @@ const Home = () => {
 
     return (
         <>
-        <div className="h-auto lg:mx-20 md:mx-16 mx-8" id='home' data-aos="fade-up">
-            <div className="lg:w-[100%] md:w-[90%] flex flex-col md:flex-row lg:flex-row items-center lg:my-0 md:my-3 my-27">
+        <div className="h-auto lg:mx-20 md:mx-16 mx-8" id='home'>
+            <div className="lg:w-[100%] md:w-[90%] flex flex-col md:flex-row lg:flex-row items-center lg:my-0 md:my-3 my-27" data-aos="fade-up">
                 <div className="lg:w-[50%] md:w-[60%] w-[100%] lg:h-[25rem] md:h-[20rem] h-[10rem]">
                     <div className="flex justify-center lg:mx-20 md:mx-5 lg:my-12 md:my-14">
                         <img src={mypic} className="lg:w-[380px] md:w-[250px] w-[180px] lg:h-[380px] md:h-[250px] h-[180px] rounded-full object-cover img-border" />
